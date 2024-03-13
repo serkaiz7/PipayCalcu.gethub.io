@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Coins Payment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Pi Coins Payment Calculator</h1>
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="total-amount">Total amount (&#8369;):</label>
+                <input type="number" id="total-amount" placeholder="Enter total amount" required>
+            </div>
+            <div class="input-group">
+                <label for="pi-coin-value">Pi Coin value (&#8369;):</label>
+                <input type="number" id="pi-coin-value" placeholder="Enter Pi coin value" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result-modal" class="modal">
+            <div class="modal-content">
+                <h2>Estimated Pi Coins Needed</h2>
+                <p id="pi-coin-needed"></p>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
+
+        <div id="disclaimer">
+            <h2>Disclaimer</h2>
+            <p>This is an estimated calculation and may not reflect actual exchange rates.</p>
+        </div>
+    </div>
+
+    <footer>
+        Created by: Prince Kaiser
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
